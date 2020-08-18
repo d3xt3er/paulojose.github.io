@@ -1,126 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/coding.ico" />
     <title>Portfólio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <nav>
-        <a href="#"><img src="./img/Logo.png" alt="Logo"></a>
-        <ul>
-            <li><a class="scroll" href="#sobre">CURSOS</a></li>
-            <li><a class="scroll" href="#servicos">SERVIÇOS</a></li>
-            <li><a class="scroll" href="#portfolio">PORTFÓLIO</a></li>
-            <li><a class="scroll" href="#contato">CONTATO</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <h1>PAULO JOSÉ</h1>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis exercitationem officiis.</p> -->
-        <a href="#sobre" class="botao scroll">CONHECER</a>
+        <a href="#home" class="logo">Paulo</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#technologies" onclick="toggleMenu();">Technologies</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#courses" onclick="toggleMenu();">Courses</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
     </header>
-
-    <section id="sobre">
-
-        <h2>CURSOS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis exercitationem officiis.</p>
-        <a href="#contato" class="botao scroll">ENTRE EM CONTATO</a>
-
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Ola!, eu sou<br><span>Paulo Santos.</span></h2>
+            <h3>Sou Desenvolvedor Back-End.</h3>
+            <a href="#about" class="btn">About me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>My journey as a developer.</h3>
+                <p>Desde que me lembro sempre gostei de ficar no computador explorando o mundo na internet porém nada
+                    como compromisso de fazer a minha vida através dele.<br><br>
+                    Mas foi em um determinado ano que descobri que podia subir na vida e ter um futuro maravilhoso
+                    através da tecnologia e desde então venho pondo como objetivo principal crescer na área de
+                    programação! admito que sempre irá existir coisas novas pra aprender porém é isso que me motiva,
+                    estar sempre em aprendizado e evoluindo!.</p>
+            </div>
+            <div class="w50">
+                <img src="./images/img1.jpg" class="img" alt="">
+            </div>
+        </div>
     </section>
 
-    <section id="servicos">
-
-        <h2>TECNOLOGIAS</h2>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="./img/react-200.png" alt="React">
+    <section class="technologies" id="technologies">
+        <div class="heading white">
+            <h2>Technologies</h2>
+            <p>Aqui umas tecnologias/linguagens que pra mim são meus pilares no mundo da programação que tenho um
+                carinho e
+                admiração por cada uma delas.</p>
+        </div>
+        <div class="content">
+            <div class="technologiesBx">
+                <img src="./images/nodejs.png">
+                <h2>Nodejs</h2>
+                <p>Conheci em 2019 onde apliquei pela primeira vez no meu projeto técnico, e desde então desenvolver
+                    back-end e integrar sistemas com esta tecnologia é a minha paixão, a cada dia estou
+                    antenado com ela para me aprimorar.</p>
             </div>
-            <div class="card-body">
-                <p>Considerando por mim um dos melhores frameworks de desenvolvimento web, junto com o node se torna
-                    ainda
-                    melhor!.</p>
+            <div class="technologiesBx">
+                <img src="./images/react.png">
+                <h2>React</h2>
+                <p>Considerado por mim um dos melhores frameworks de desenvolvimento web, mudou minha visão da web sobre
+                    desenvolver aplicações.</p>
+            </div>
+            <div class="technologiesBx">
+                <img src="./images/javascript.png">
+                <h2>JavaScript</h2>
+                <p>Uma linguagem que é a base de outras tecnologias que sempre estou aprendendo para aprofundar ainda
+                    mais meus conhecimentos.</p>
+            </div>
+            <div class="technologiesBx">
+                <img src="./images/react-native.png">
+                <h2>React Native</h2>
+                <p>Uma tecnologia mobile que estou aprendendo aos poucos como desenvolver com ela, mas que é incrível e
+                    tem um
+                    potencial gigante aí por fora sendo utilizada por grandes nomes.</p>
+            </div>
+            <div class="technologiesBx">
+                <img src="./images/jquery.png">
+                <h2>jQuery</h2>
+                <p>O primeiro framework JavaScript que aprendi a utilizar em projetos tanto para front-end como
+                    back-end, é uma mão na roda utiliza-lá quando necessário.</p>
+            </div>
+            <div class="technologiesBx">
+                <img src="./images/php.png">
+                <h2>PHP</h2>
+                <p>Minha primeira linguagem "Server-Side", que foi meu start inicial para o nicho de back-end, tenho
+                    gosto em desenvolver com essa linguagem e seus outros frameworks como Laravel.</p>
             </div>
         </div>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="./img/javascript-200.png" alt="JavaScript">
-            </div>
-            <div class="card-body">
-                <p>Uma linguagem que estou estudando amando aprender mais cada dia e acredito que tenha um potencial
-                    enorme!.</p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-header">
-                <img src="./img/nodejs-200.png" alt="Node">
-            </div>
-            <div class="card-body">
-                <p>Apaixonado por desenvolver Back-end e integrar sistemas com esta tecnologia.</p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-header">
-                <img src="./img/php-200.png" alt="PHP">
-            </div>
-            <div class="card-body">
-                <p>Minha primeira linguagem Server-Side foi onde descobri meu gosto por Back-End.</p>
-            </div>
-        </div>
-
     </section>
 
-    <section id="portfolio">
-        <h2>PORTFÓLIO</h2>
-        <img src="img/portfolio-1.jpg" alt="cogumelos">
-        <img src="img/portfolio-2.jpeg" alt="Sol no horizonte">
-        <img src="img/portfolio-3.jpeg" alt="Pessoas à beira de vale">
-        <img src="img/portfolio-4.jpg" alt="Floresta nevada">
-        <img src="img/portfolio-5.jpeg" alt="Praia deserta">
-        <img src="img/portfolio-6.jpeg" alt="Alce à beira de rio">
+
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2>Projects</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s.</p>
+        </div>
+
+        <div class="content">
+            <div class="projectsBx">
+                <img src="./images/product1.jpg">
+            </div>
+
+            <div class="projectsBx">
+                <img src="./images/product2.jpg">
+            </div>
+
+            <div class="projectsBx">
+                <img src="./images/product3.jpg">
+            </div>
+            <div class="projectsBx">
+                <img src="./images/product4.jpg">
+            </div>
+            <div class="heading">
+                <a href="https://github.com/d3xt3er" class="btn">View More</a>
+            </div>
+        </div>
     </section>
 
-    <section id="contato">
-        <h2>CONTATO</h2>
-        <!-- <p>Entre em contato!.</p> -->
-        <div>
-            <img src="./img/whatsapp.png" width="50px" alt="fone">
-            <p><a href="tel:xx55555555">(13) 99777-1579</a></p>
+    <section class="courses" id="courses">
+        <div class="heading">
+            <h2>Courses</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s.</p>
         </div>
-
-        <div>
-            <img src="./img/github.png" width="50px" alt="github">
-            <p><a href="">d3xte3r</a></p>
+        <div class="content">
+            <div class="coursesBx">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</p>
+                <h3>Someone Famous <br> <span>Creative Designer</span> </h3>
+            </div>
+            <div class="coursesBx">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</p>
+                <h3>Someone Famous <br> <span>Creative Designer</span> </h3>
+            </div>
         </div>
-
-        <div>
-            <img src="./img/linkedin.png" width="50px" alt="linkedin">
-            <p><a href="">Paulo Santos</a></p>
-        </div>
-
     </section>
 
-    <footer>
-        <p>@ C.O Desenvolvido por Paulo José.</p>
-    </footer>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Us</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>11347-150 Jardim Rio Branco <br> São Vicente - SP <br> 440</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>(13) 99777-1579</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>paulo27alt@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="">
+                    <h3>
+                        Message Me
+                    </h3>
+                    <input type="text" name="" placeholder="Full name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your message"></textarea>
+                    <input type="submit" value="Send" placeholder="Send">
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <div class="copyright">
+        <p>Copyright © 2020 dev.paulo.</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
 
 </html>
