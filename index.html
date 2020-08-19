@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+
     <link rel="shortcut icon" href="./images/coding.ico" />
     <title>Portfólio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -109,9 +111,20 @@
 
         <div class="content">
             <div class="projectsBx">
-                <img src="./images/AluraFlix - Site.png">
+                <a href="./images/AluraFlix - Site.png" class="example-image-link" data-lightbox="example-1">
+                    <img class="example-image" src="./images/AluraFlix - Site.png">
+                </a>
+                <hr>
 
-                <p>kjhfkasjdbflkajsbfljksabf</p>
+                <h3> AluraFlix </h3>
+                <br>
+                <p>AluraFlix é um site de videos sobre tecnologia baseado na Netflix desenvolvido durante a semana
+                    Imersão React da Alura.</p>
+                <br>
+                <a href="https://imers-o-react.vercel.app">WebSite</a>
+                <br>
+                <br>
+                <a href="">View Project on GitHub. <i class="fa fa-github"></i></a>
             </div>
 
             <div class="projectsBx">
@@ -215,9 +228,11 @@
         </div>
     </section>
 
+
     <div class="copyright">
         <p>Copyright © 2020 dev.paulo.</p>
     </div>
+
     <script type="text/javascript">
         window.addEventListener('scroll', function () {
             var header = document.querySelector('header');
@@ -232,6 +247,8 @@
             menu.classList.toggle('active')
         }
     </script>
+
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 
