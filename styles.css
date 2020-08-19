@@ -209,9 +209,9 @@ img {
     padding: 20px;
 }
 
-.projectsBx:hover {
+/* .projectsBx:hover {
     box-shadow: 0 3px 15px rgba(139, 139, 139, 0.7);
-}
+} */
 
 .projects .content .projectsBx img {
     max-width: 100%;
@@ -232,7 +232,7 @@ img {
     max-width: calc(50% - 40px);
     padding: 60px 40px;
     margin: 20px;
-    background: #2196f3;
+    background: #585858;
 }
 
 .courses .content .coursesBx p {
@@ -310,6 +310,10 @@ img {
     min-width: 40%;
 }
 
+.contact .heading {
+    color: #fff;
+}
+
 .contactInfoBx {
     position: relative;
 }
@@ -328,6 +332,11 @@ img {
     justify-content: center;
     align-items: flex-start;
     font-size: 24px;
+}
+
+.contactInfoBx .text a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .contactInfoBx .box .text {
@@ -424,8 +433,21 @@ img {
         font-size: 16px;
     }
 
+    .projects .heading h2 {
+        color: #111;
+    }
+
+    .courses .heading h2 {
+        color: #111;
+    }
+
+    .about .heading h2 {
+        color: #111;
+    }
+
     .heading h2 {
         font-size: 24px;
+        color: #fff;
     }
 
     .contentBx h3 {
@@ -450,11 +472,15 @@ img {
         padding: 10px;
     }
 
+    .projects .content .projectsBx img {
+        align-items: center;
+    }
+
     .courses .content .coursesBx {
         max-width: calc(100% - 20px);
         padding: 40px 20px;
         margin: 10px;
-        background: #2196f3;
+        background: #585858;
     }
 
     .courses .content .coursesBx h3 {
