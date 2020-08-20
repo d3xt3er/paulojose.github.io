@@ -6,4 +6,4 @@ Repositório para o meu portfólio, onde tem alguns dos projetos que desenvolvi,
 
 <hr>
 :globe_with_meridians:
-Clique <a href="#">aqui</a> para acessar.
+Clique <a href="https://d3xt3er.github.io/paulojose.github.io/">aqui</a> para acessar.
